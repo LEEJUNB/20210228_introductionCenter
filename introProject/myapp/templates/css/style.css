@@ -1,0 +1,16 @@
+body {
+    margin : 0; /*바디태그 margin defalut값 때문에 흰선 발생. 이를 제거*/
+}
+
+.navbar{
+    display : flex; 
+    justify-content: space-between; /*중심축 배치 (현재는 중심축이 수평축)*/
+    align-items: center; /*반대축(현재는 반대축이 수직축)의 속성값 활용 */
+    background-color:bisque;
+    padding : 8px 12px; /*위아래 8px, 양옆 12px*/
+}
+
+a {
+    text-decoration: none;/*모든 ankor태그의 컨텐츠에는 defalut로 밑줄 존재. 이를 제거*/
+    color :black;
+}
