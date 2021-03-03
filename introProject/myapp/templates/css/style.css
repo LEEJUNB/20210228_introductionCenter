@@ -51,6 +51,14 @@ a {
     padding : 8px 12px;
 }
 
+.navbar__toogleBtn {
+    display: none; /*일반 사이즈에선 나타나지 않음*/
+    position: absolute; /*소속된 배치와 무관하게 위치 설정*/
+    right : 15px; /*우측에서 32px 거리둠*/
+    font-size: 24px;
+    color : black;
+}
+
 /*
 레이아웃을 반응형으로 만들때는 media쿼리 사용
 특정 사이즈 이하가 될 경우, 웹 사이트의 메뉴가 제대로 보이지 않음
@@ -80,5 +88,10 @@ a {
     .navbar__icons {
         justify-content: center; /*로고는 현재 반대축이므로 justify-content 사용*/
         width : 100%;
+    }
+
+    /*토글,햄버거 버튼*/
+    .navbar__toogleBtn{
+        display: block;
     }
 }
