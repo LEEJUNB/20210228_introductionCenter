@@ -1,3 +1,9 @@
+:root {
+    --text-color : #f0f4f5;
+    --background-color: olive;
+    --accent-color : #d49466;
+}
+
 body {
     margin : 0; /*바디태그 margin defalut값 때문에 흰선 발생. 이를 제거*/
     font-family: 'Source Sans Pro';
@@ -7,22 +13,22 @@ body {
     display : flex; 
     justify-content: space-between; /*중심축 배치 (현재는 중심축이 수평축)*/
     align-items: center; /*반대축(현재는 반대축이 수직축)의 속성값 활용 */
-    background-color:olive;
+    background-color:var(--background-color);
     padding : 8px 12px; /*위아래 8px, 양옆 12px*/
 }
 
 a {
     text-decoration: none;/*모든 ankor태그의 컨텐츠에는 defalut로 밑줄 존재. 이를 제거*/
-    color :white;
+    color :var(--text-color);
 }
 
 .navbar__logo{
     font-size: 24px;
-    color:white;
+    color :var(--text-color);
 }
 
 .navbar__logo i{
-    color : black;
+    color :var(--accent-color);
 }
 
 .navbar__menu {
@@ -43,7 +49,7 @@ a {
 .navbar__icons{
     padding-left : 0px; /*가운데 정렬*/
     list-style: none;
-    color : white;
+    color :var(--text-color);
     display: flex;
 }
 
@@ -56,7 +62,7 @@ a {
     position: absolute; /*소속된 배치와 무관하게 위치 설정*/
     right : 15px; /*우측에서 32px 거리둠*/
     font-size: 24px;
-    color : black;
+    color :var(--accent-color);
 }
 
 /*
