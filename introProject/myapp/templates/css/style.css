@@ -73,6 +73,7 @@ a {
     }
     /*메뉴바가 한줄에 하나씩*/
     .navbar__menu{
+        display: none; /*현 사이즈에선 메뉴가 나타나지 않음*/
         flex-direction: column;
         align-items: center; /*메뉴바만 가운데 정렬 */
         width : 100%; /*메뉴바의 가운데 정렬을 위해 너비를 늘림*/
@@ -86,6 +87,7 @@ a {
 
     /*로고를 가운데로*/
     .navbar__icons {
+        display: none; /*현 사이즈에선 아이콘이 나타나지 않음*/
         justify-content: center; /*로고는 현재 반대축이므로 justify-content 사용*/
         width : 100%;
     }
@@ -93,5 +95,10 @@ a {
     /*토글,햄버거 버튼*/
     .navbar__toogleBtn{
         display: block;
+    }
+    /*active요소 추가*/
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display :flex;
     }
 }
